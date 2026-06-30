@@ -13,7 +13,7 @@ body {
     padding: 30px;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .avatar {
@@ -21,6 +21,7 @@ body {
     height: 150px;
     border-radius: 50%;
     border: 5px solid #4facfe;
+    object-fit: cover;
 }
 
 h1 {
@@ -31,6 +32,7 @@ h1 {
 h2 {
     color: #666;
     font-weight: normal;
+    margin-top: 0;
 }
 
 .info {
@@ -39,23 +41,15 @@ h2 {
     line-height: 1.8;
 }
 
-button {
-    margin-top: 20px;
-    padding: 12px 25px;
-    border: none;
-    background: #4facfe;
-    color: white;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
+.info p {
+    margin: 10px 0;
 }
 
-button:hover {
-    background: #008cff;
+a {
+    color: #008cff;
+    text-decoration: none;
 }
 
-#ketqua {
-    margin-top: 20px;
-    font-weight: bold;
-    color: green;
+a:hover {
+    text-decoration: underline;
 }
