@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Điểm Danh - Nguyễn Tấn Phát</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://via.placeholder.com/150"
+             alt="Ảnh đại diện"
+             class="avatar">
+
+        <h1>NGUYỄN TẤN PHÁT</h1>
+        <h2>Trang Điểm Danh Cá Nhân</h2>
+
+        <div class="info">
+            <p><strong>Mã số SV:</strong> 221A010071</p>
+            <p><strong>Lớp:</strong> 221A2901</p>
+            <p><strong>Ngày sinh:</strong> 21/04/2004</p>
+            <p><strong>Quê quán:</strong> Long An</p>
+            <p><strong>Địa chỉ:</strong> 18/12E, Ấp 33, Xã Bình Chánh, TP.HCM</p>
+            <p><strong>Số điện thoại:</strong> 0878805177</p>
+            <p><strong>Email:</strong> 
+                <a href="mailto:mumcip99@gmail.com">
+                    mumcip99@gmail.com
+                </a>
+            </p>
+
+            <p><strong>Facebook:</strong>
+                <a href="https://www.facebook.com/share/1Xy3dVWMHk/" target="_blank">
+                    Xem trang cá nhân
+                </a>
+            </p>
+
+            <p><strong>Sở thích:</strong><br>
+                • Tìm hiểu về khí tài và lịch sử quân sự<br>
+                • Vẽ<br>
+                • Chụp ảnh
+            </p>
+        </div>
+
+        <button onclick="diemdanh()">Điểm Danh</button>
+
+        <p id="ketqua"></p>
+    </div>
+
+    <script>
+        function diemdanh() {
+            const now = new Date();
+            document.getElementById("ketqua").innerHTML =
+                "✅ Điểm danh thành công lúc: " +
+                now.toLocaleString("vi-VN");
+        }
+    </script>
+
+</body>
+</html>
