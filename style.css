@@ -9,40 +9,36 @@ body {
     width: 80%;
     max-width: 700px;
     margin: 50px auto;
-    background: white;
-    padding: 30px;
+    background: #fff;
+    padding: 35px;
     border-radius: 20px;
-    text-align: center;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
-.avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid #4facfe;
-    object-fit: cover;
-}
-
 h1 {
+    text-align: center;
     color: #333;
     margin-bottom: 5px;
 }
 
 h2 {
+    text-align: center;
     color: #666;
     font-weight: normal;
     margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .info {
-    text-align: left;
-    margin-top: 20px;
     line-height: 1.8;
 }
 
 .info p {
     margin: 10px 0;
+}
+
+.info ul {
+    margin-top: 5px;
 }
 
 a {
@@ -52,4 +48,20 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
 }
